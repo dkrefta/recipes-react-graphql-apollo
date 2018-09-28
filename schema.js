@@ -16,7 +16,12 @@ type User {
   password: String! 
   email: String!
   joinDate: String
-  favorites: Recipe
+  favorites: [Recipe]
+}
+
+type Query {
+
+  getAllRecipes: [Recipe]
 }
 
 `;
